@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rocket: {{yield browserTitle()}}</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/ico/favicon-16x16.png">
+    <link rel="manifest" href="/public/ico/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
+
+    <meta name="csrf-token" content="{{.CSRFToken}}">
+
+    {{yield css()}}
+
+</head>
+<body class="bg-gray-50 text-slate-900">
+<div class="min-h-screen px-4 py-8 sm:px-6 lg:px-8">
+    <div class="mx-auto w-full max-w-3xl">
+
+                {{yield pageContent()}}
+
+    </div>
+</div>
+{{yield js()}}
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+{{extends "./layouts/base.jet"}}
+
+{{block browserTitle()}}Welcome{{end}}
+
+{{block css()}}
+
+{{end}}
+
+{{block pageContent()}}
+        <div class="flex flex-col items-center text-center space-y-6">
+            <div class="space-y-4">
+                <img src="/public/images/rkt.jpg" alt="Rocket logo" class="mx-auto h-24 w-auto rounded-full shadow-md">
+                <div>
+                    <h1 class="text-4xl font-bold tracking-tight text-slate-900">Rocket</h1>
+                    <p class="text-sm text-slate-500">logout</p>
+               
+                </div>
+            </div>
+        </div>
+{{end}}
+
+{{block js()}}
+
+{{end}}
