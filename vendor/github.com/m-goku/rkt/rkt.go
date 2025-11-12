@@ -270,8 +270,13 @@ func (r *RKT) Init(p initPaths) error {
 
 // Listen and serve starts the web server
 func (r *RKT) ListenAndServe() {
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080" // default for local dev or Render fallback
+	}
+
 	server := &http.Server{
-		Addr:         ":" + os.Getenv("PORT"),
+		Addr:         ":" + port,
 		ErrorLog:     r.ErrorLog,
 		Handler:      r.Routes,
 		IdleTimeout:  30 * time.Second,
