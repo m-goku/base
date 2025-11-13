@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"base/data"
+	"fmt"
 	"net/http"
 
 	"github.com/m-goku/rkt"
@@ -42,5 +43,6 @@ func (h *Handlers) JSON(w http.ResponseWriter, r *http.Request) {
 
 // DownloadFile is the handler to demonstrate file download reponses
 func (h *Handlers) DownloadFile(w http.ResponseWriter, r *http.Request) {
-	h.App.DownloadFile(w, r, "./public/images", "rkt.jpg")
+	book := r.PathValue("book")
+	h.App.DownloadFile(w, r, "./public/books", fmt.Sprintf("%s.pdf", book))
 }

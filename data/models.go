@@ -20,7 +20,7 @@ type Models struct {
 	// any models inserted here (and in the New function)
 	// are easily accessible throughout the entire trylication
 	Users  User
-	Tokens Token
+	
 
 }
 
@@ -39,7 +39,7 @@ func NewModel(databasePool *sql.DB) Models {
 
 	return Models{
 		Users:  User{},
-		Tokens: Token{},
+		
 	}
 }
 
