@@ -3,9 +3,8 @@ module base
 go 1.24.2
 
 require (
-	github.com/CloudyKit/jet/v6 v6.3.1
 	github.com/go-chi/chi/v5 v5.2.3
-	github.com/m-goku/rkt v1.0.0
+	github.com/m-goku/rkt v1.0.1
 	github.com/upper/db/v4 v4.10.0
 	go.mongodb.org/mongo-driver v1.17.4
 	golang.org/x/crypto v0.39.0
@@ -13,6 +12,7 @@ require (
 
 require (
 	github.com/CloudyKit/fastprinter v0.0.0-20200109182630-33d98a066a53 // indirect
+	github.com/CloudyKit/jet/v6 v6.3.1 // indirect
 	github.com/PuerkitoBio/goquery v1.10.3 // indirect
 	github.com/alexedwards/scs/mysqlstore v0.0.0-20251002162104-209de6e426de // indirect
 	github.com/alexedwards/scs/postgresstore v0.0.0-20251002162104-209de6e426de // indirect
@@ -20,7 +20,6 @@ require (
 	github.com/alexedwards/scs/v2 v2.9.0 // indirect
 	github.com/andybalholm/cascadia v1.3.3 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
-	github.com/bwmarrin/go-alone v0.0.0-20190806015146-742bb55d1631 // indirect
 	github.com/cespare/xxhash v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/dgraph-io/badger/v3 v3.2103.5 // indirect
